@@ -1,0 +1,16 @@
+﻿<Window x:Class="Rectangle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rectangle"
+        mc:Ignorable="d"
+        Title="Adjust A Rectangle" Height="450" Width="800">
+    <Grid>
+        <TextBlock Margin="10,10,0,0" TextWrapping="Wrap" Text="Enter A New Area For Rectangle Width" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="numberTextBox" HorizontalAlignment="Left" Margin="20,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="numberTextBox_TextChanged" PreviewTextInput="numberTextBox_previewTextInput"/>
+        <Rectangle x:Name="RectangleShape" Height="100" Stroke="Black" VerticalAlignment="Center"  HorizontalAlignment="Center" Width="400"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,84,0,0" TextWrapping="Wrap" Text="Please enter number between 1 - 200" VerticalAlignment="Top" Foreground="Red"/>
+
+    </Grid>
+</Window>
