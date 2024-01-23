@@ -38,9 +38,6 @@ namespace Rectangle
             string userWidthInput = numberTextBox.Text;
             
             
-
-              
-            
         }
 
         // Makes sure input is numberical
